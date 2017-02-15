@@ -1,0 +1,14 @@
+.people, #ron, #jhon, #alina{
+	/*У этого селектора наибольший приоритет 3.1.0, почему он не перекрыл остальные селекторы?*/
+	color: black;
+}
+.people{
+	color: red;
+}
+.people #jhon{
+	color: green;
+}
+
+#alina{
+	color: blue;
+}
