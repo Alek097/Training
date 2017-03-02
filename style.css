@@ -1,14 +1,101 @@
-.people, #ron, #jhon, #alina{
-	/*У этого селектора наибольший приоритет 3.1.0, почему он не перекрыл остальные селекторы?*/
-	color: black;
+body {
+    font-family: Arial;
 }
-.people{
-	color: red;
-}
-.people #jhon{
-	color: green;
+/*start head*/
+.head {
 }
 
-#alina{
-	color: blue;
+.head__sigma {
+    font-size: 20px;
 }
+
+.head__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head__menu-item {
+    margin-right: 15px;
+    color: #cbcbcb;
+    font-size: 14px;
+}
+
+.head_text {
+    color: #b5b5b5;
+    font-size: 12px;
+}
+/*end head*/
+
+
+/*start theme*/
+.theme {
+    margin-top: 15px;
+    background-image: url('images/Winter_forest.jpg');
+}
+
+.theme, .theme_blur, .theme_position-center {
+    height: 400px;
+}
+
+.theme_position-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme_blur {
+    background-color: rgba(255, 255, 255, 0.77);
+    width: 100%;
+}
+
+.theme__description {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme__description-boundaries {
+    width: 25%;
+}
+
+.theme__description_title {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.theme__description_title, .theme__description_text {
+    text-align: center;
+}
+
+.theme__description_text {
+    line-height: 1.5;
+    color: #666666;
+}
+
+.theme__description-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.theme__description-button {
+    margin-top: 15px;
+    height: 40px;
+    border: none;
+    width: 40%;
+    color: white;
+}
+
+.theme__description-button_green {
+    background-color: #5bb85d;
+}
+
+.theme__description-button_red {
+    background-color: #da5550;
+}
+/*end theme*/
