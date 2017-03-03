@@ -32,11 +32,10 @@ body {
 /*start theme*/
 .theme {
     margin-top: 15px;
-    background-image: url('images/Winter_forest.jpg');
 }
 
-.theme, .theme_blur, .theme_position-center {
-    height: 400px;
+.theme_bgimage {
+    background-image: url('images/Winter_forest.jpg');
 }
 
 .theme_position-center {
@@ -57,10 +56,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.theme__description-boundaries {
+.theme__description-boundaries_width85 {
+    width: 85%;
+}
+
+.theme__description-boundaries_width25 {
     width: 25%;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 830px) {
+    .theme__description-boundaries_width25 {
+        width: 100%;
+    }
 }
 
 .theme__description_title {
@@ -99,3 +110,52 @@ body {
     background-color: #da5550;
 }
 /*end theme*/
+/*start block-menu*/
+.block-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.block-menu__item {
+    width: 25%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.block-menu__item_bgcolor-e3e7e8 {
+    background-color: #e3e7e8;
+}
+
+.block-menu__item_bgcolor-999999 {
+    background-color: #999999;
+}
+
+.block-menu__item_bgcolor-676767 {
+    background-color: #676767;
+}
+
+.block-menu__item_bgcolor-454545 {
+    background-color: #454545;
+}
+
+    .block-menu__item_bgcolor-454545 .theme__description_text,
+    .block-menu__item_bgcolor-454545,
+    .block-menu__item_bgcolor-676767 .theme__description_text,
+    .block-menu__item_bgcolor-676767,
+    .block-menu__item_bgcolor-999999 .theme__description_text,
+    .block-menu__item_bgcolor-999999 {
+        color: white;
+    }
+
+@media only screen and (min-width : 320px) and (max-width : 830px) {
+    .block-menu {
+        flex-direction: column;
+    }
+
+    .block-menu__item {
+        width: 100%;
+    }
+}
+/*end block-menu*/
